@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  p3hetee:
+    build: .
+    container_name: he-crusk
+    command: /bin/bash
+    tty: true
+    stdin_open: true
+    cap_add:
+      - SYS_ADMIN
+    security_opt:
+      - seccomp:unconfined
+
+
+
+
+
+    
